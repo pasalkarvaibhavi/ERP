@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Library Management Sidebar Preview</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .left-sidebar {
+            width: 250px;
+            background-color: #343a40;
+            color: white;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .sidebar-nav {
+            padding: 20px;
+        }
+
+        .sidebar-item {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .sidebar-link {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .sidebar-link:hover {
+            background-color: #495057;
+        }
+
+        .hide-menu {
+            margin-left: 10px;
+        }
+
+        .nav-small-cap {
+            font-weight: bold;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+        }
+
+        .page-wrapper {
+            margin-left: 250px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="left-sidebar with-vertical">
+        <div>
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <!-- Common Sidebar Elements -->
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="dashboard.html">
+                            <i class="fa-solid fa-list" style="font-size: 22px;"></i>
+                            <span class="hide-menu">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="profile.html">
+                            <i class="fa fa-user-circle" style="font-size: 22px;"></i>
+                            <span class="hide-menu">Profile</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="logout.html">
+                            <i class="fas fa-sign-out-alt" style="font-size: 22px;"></i>
+                            <span class="hide-menu">Logout</span>
+                        </a>
+                    </li>
+
+                    <!-- Library Panel Sidebar -->
+                    <li class="nav-small-cap">
+                        <span class="hide-menu">Library Management</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="view_certificate_requests.html">
+                            <i class="fa-solid fa-file-alt" style="font-size: 22px;"></i>
+                            <span class="hide-menu">View Certificate Requests</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="approve_reject_requests.html">
+                            <i class="fa-solid fa-check-circle" style="font-size: 22px;"></i>
+                            <span class="hide-menu">Approve/Reject Requests</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="upload_download_certificates.html">
+                            <i class="fa-solid fa-upload" style="font-size: 22px;"></i>
+                            <span class="hide-menu">Upload/Download Certificates</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="search_requests.html">
+                            <i class="fa-solid fa-search" style="font-size: 22px;"></i>
+                            <span class="hide-menu">Search Requests</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="generate_certificates.html">
+                            <i class="fa-solid fa-file-signature" style="font-size: 22px;"></i>
+                            <span class="hide-menu">Generate Certificates</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="certificate_history.html">
+                            <i class="fa-solid fa-history" style="font-size: 22px;"></i>
+                            <span class="hide-menu">Certificate History</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-wrapper">
+        <h1>Welcome to the Library Management System</h1>
+        <p>Select an option from the sidebar to manage certificate requests.</p>
+    </div>
+</body>
+
+</html>
